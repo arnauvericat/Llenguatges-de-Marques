@@ -1,0 +1,51 @@
+/* Estil general del cos de la pàgina */
+body {
+    font-family: serif;
+    font-size: 1.2em;
+    background-color: #c9dcff;
+    line-height: 1.25;
+}
+
+/* Títols */
+h1 {
+    color: blue;
+    font-family: Arial, sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+    color: #535353;
+    font-family: Arial, sans-serif;
+}
+
+/* Codi Python dins de pre */
+pre {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #ffffff;
+    overflow-x: auto;
+}
+
+/* ID especial */
+#especial::first-letter {
+    font-weight: bold;
+    font-size: 300%;
+}
+
+/* Classes */
+.intro {
+    background-color: #FF8870;
+    padding: 8px;
+    border-left: 3px solid #cc22ff;
+}
+
+.destacat {
+    font-style: italic;
+    color: #9900cc;
+    margin-bottom: 10px;
+}
+
+.resaltat {
+    background-color: #ffeeaa;
+    font-weight: bold;
+    padding: 5px;
+}
