@@ -1,197 +1,341 @@
-html, body {
-  height: 100%;
-  margin: 0;
-  font-family: "Helvetica Neue", Arial, sans-serif;
-  background: #fff8a4; /* Un amarillo más claro como el de la imagen */
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background: #fff8a4; 
+    }
+
+
+    .container {
+      max-width: 1200px; 
+      margin: 0 auto;
+      background: #fff; 
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+
+
+    .header-bg {
+      background: #333; 
+      padding-top: 4px; 
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: center; 
+      border-bottom: 18px solid #e6e6e6;
+      background: #525252; 
+      color: #fff;
+      padding: 10px 16px;
+      min-height: 40px; 
+    }
+
+
+    .topnav {
+      background: #3b3b3b; 
+      color: #ffe;
+      padding: 10px 16px; 
+      display: flex;
+      gap: 20px;
+      font-weight: 700;
+      justify-content: center;
+      font-size: 15px;
+    }
+
+    .topnav a {
+      color: #ffcc00; 
+      text-decoration: none;
+    }
+
+
+    .article {
+      padding: 30px 40px;
+      background: #fff; 
+    }
+
+    .article h1 {
+      color: #0b4b6f;
+      margin: 6px 0 20px;
+      font-size: 30px;
+    }
+
+    .image-context {
+      text-align: center;
+      font-weight: bold;
+      font-size: 14px;
+      margin: 10px 0;
+    }
+
+    .lead {
+      font-family: "Helvetica Neue", sans-serif;
+      font-weight: 400; 
+      margin: 8px 0 14px;
+      color: #222;
+      line-height: 1.5;
+      border-bottom: 1px solid #ccc; 
+      padding-bottom: 15px; 
+    }
+
+    .meta {
+      color: #666;
+      font-size: 13px;
+      padding-top: 5px; 
+      padding-bottom: 5px;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .social-links {
+      display: inline-flex;
+      gap: 6px;
+      margin-left: 0; 
+    }
+
+
+    .main-image {
+      display: block;
+      margin: 12px auto;
+      max-width: 100%; 
+      width: 100%;
+      border: 2px solid #bbb; 
+      border-radius: 0; 
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+
+    .section {
+      color: #0b4b6f;
+      margin-top: 24px; 
+      border-bottom: 1px solid #ddd; 
+      padding-bottom: 5px;
+      font-size: 22px;
+    }
+
+    p {
+      color: #222;
+      line-height: 1.5;
+      margin-bottom: 15px; 
+    }
+
+    blockquote {
+      border-left: 5px solid #ffcc00;
+      padding-left: 15px;
+      margin: 15px 0;
+    }
+
+
+    .banner {
+      background: #7a3fb2; 
+      color: #fff;
+      padding: 14px;
+      text-align: center;
+      margin-top: 0; 
+      border-top: 1px solid #7a3fb2;
+    }
+
+    .banner p {
+      color: #fff;
+      font-size: 12px;
+      margin-bottom: 5px;
+    }
+
+    .banner a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    .footer-img {
+      height: 80px;
+      margin-bottom: 6px;
+      position: absolute;
+      bottom: 0;
+    }
+
+    .legal-info {
+      text-align: center;
+      font-size: 10px;
+      color: #666;
+      margin: 10px 0;
+    }
+
+ 
+    .arcs-layout {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 35px;
+      margin-top: 0; 
+    }
+
+
+    .arcs-list {
+      flex: 2;
+    }
+
+    .arc-block {
+      margin-bottom: 18px;
+    }
+
+    .arc-block h2 {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 20px;
+      color: #0b4b6f;
+      margin: 10px 0;
+    }
+
+    .arc-block h2 img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .arc-block ol {
+      margin-left: 25px;
+      line-height: 1.5;
+      font-size: 15px;
+    }
+
+  
+    .arcs-images {
+      flex: 1.4; 
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      margin-top: 0; 
+    }
+
+    a:hover {
+      color: #b45700;
+      text-decoration: underline;
+    }
+
+    .arcs-images img {
+      width: 115%; 
+      max-width: 115%;
+      align-self: center;
+      border-radius: 0; 
+      border: 2px solid #999;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    @media (max-width: 920px) {
+      .container {
+        margin: 0; 
+      }
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 0;
+      }
+
+      .article {
+        padding: 15px;
+      }
+
+      .logo {
+        height: 36px;
+      }
+
+      .arcs-layout {
+        flex-direction: column;
+      }
+
+      .arcs-images img {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+
+
+    .character-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .character-card {
+      margin-bottom: 30px;
+      padding: 15px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .character-card:last-child {
+      border-bottom: none;
+    }
+
+    .character-card h3 {
+      color: #0b4b6f;
+      margin: 0 0 8px 0;
+      font-size: 18px;
+    }
+
+    .character-card p {
+      margin: 0 0 15px 0;
+      line-height: 1.4;
+    }
+
+    .character-image {
+      display: block;
+      margin: 10px auto;
+      max-width: 150px;
+      height: auto;
+      border: 2px solid #999;
+      border-radius: 0;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .more-button {
+      display: block;
+      width: 100%;
+      padding: 8px 12px;
+      background: #666;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .more-button:hover {
+      background: #444;
+    }
+
+
+    .character-list li {
+      margin-bottom: 20px;
+    }
+
+    .character-list a {
+      color: #ffcc00;
+      text-decoration: none;
+    }
+
+    .character-list a:hover {
+      text-decoration: underline;
+    }
+  
+    .character-list {
+  list-style: disc; 
+  padding-left: 20px; 
+  margin: 0 0 20px 0;
 }
 
-
-
-/* Contenidor principal */
-.container {
-  max-width: 900px;
-  /* El margen es más pequeño en la imagen para estar cerca del borde superior */
-  margin: 0 auto;
-  /* El contenido principal debe ser BLANCO para la zona de lectura */
-  background: #fff; 
-  /* Se elimina el borde y la sombra que no aparecen en el diseño de la imagen */
+.character-list li {
+  margin-bottom: 10px; 
 }
 
-/* Clase para el fondo gris que envuelve el nav y la cabecera */
-.header-bg {
-    background: #333; /* Color gris oscuro */
-    padding-top: 4px; /* Simula el pequeño borde amarillo superior */
-    border-top: 4px solid #ffcc00; /* Amarillo oscuro para el borde superior */
-}
-
-/* Capçalera - Contenedor del logo */
-.topbar {
-  /* Se ajusta para que el logo del sitio web (no el de One Piece) encaje
-     Si se usa solo texto o una imagen pequeña, se centra */
-  display: flex;
-  align-items: center;
-  justify-content: center; 
-  background: #333; /* El mismo gris oscuro */
-  color: #fff;
-  padding: 10px 16px;
-  min-height: 40px; /* Asegura una altura mínima si no hay logo */
-}
-
-/* Se elimina el .logo, .wiki-title y .wiki-subtitle si solo se usa la navegación superior como en la imagen */
-
-/* Navegació */
-.topnav {
-  background: #4a4a4a; /* Un gris un poco más claro que el de la cabecera */
-  color: #ffe;
-  padding: 10px 16px; /* Aumenta el padding para que sea más grueso */
-  display: flex;
-  gap: 16px;
-  font-weight: 700;
-  justify-content: center;
-  font-size: 14px;
-}
-
-
-.topnav a {
-  color: #ffcc00; /* Amarillo fuerte como en la imagen */
+.character-list a {
+  color: #ffcc00;
   text-decoration: none;
 }
 
-/* Article - La zona de contenido de lectura (blanca) */
-.article {
-  padding: 18px 30px;
-  background: #fff; /* Fondo blanco */
-}
-
-.article h1 {
-  color: #0b4b6f; /* Color azul oscuro como en la imagen */
-  margin: 6px 0 12px;
-  font-size: 28px;
-}
-
-
-/* Párrafo justo antes de la imagen, que en la imagen original está centrado y en negrita */
-.image-context {
-    text-align: center;
-    font-weight: bold;
-    font-size: 14px;
-    margin: 10px 0;
-}
-
-/* ... código CSS anterior ... */
-
-.lead {
-  font-family: "Helvetica Neue", sans-serif;
-  font-weight: 400; 
-  margin: 8px 0 14px;
-  color: #222;
-  line-height: 1.5;
-  /* AÑADIDO: Línea divisoria debajo del texto principal */
-  border-bottom: 1px solid #ccc; /* Línea divisoria gris */
-  padding-bottom: 15px; /* Espacio entre el texto y la línea */
-}
-
-.meta {
-  color: #666;
-  font-size: 13px;
-  /* El borde se mueve al .lead */
-  padding-top: 5px; /* Un poco de espacio superior si es necesario */
-  padding-bottom: 5px;
-  margin-bottom: 14px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-/* ... el resto del código CSS sigue igual ... */
-
-.social-links {
-  display: inline-flex;
-  gap: 6px;
-  /* En la imagen, está justo al lado de la fecha, no tiene un gran margen a la izquierda */
-  margin-left: 0; 
-}
-
-/* Los otros estilos de .social-icon, .main-image, .section, p se mantienen o se ajustan sutilmente */
-
-.main-image {
-  display: block;
-  margin: 12px auto;
-  max-width: 100%; /* Ajuste para que ocupe todo el ancho disponible */
-  width: 100%;
-  border: 1px solid #ddd; /* Borde más sutil que el original */
-}
-
-.section {
-  color: #0b4b6f;
-  margin-top: 24px; /* Más espacio superior para separar secciones */
-  border-bottom: 1px solid #ddd; /* Línea de separación para los títulos */
-  padding-bottom: 5px;
-  font-size: 22px;
-}
-
-p {
-  color: #222;
-  line-height: 1.5;
-  margin-bottom: 15px; /* Más espacio entre párrafos */
-}
-
-blockquote {
-    border-left: 5px solid #ffcc00; /* Borde amarillo para la cita */
-    padding-left: 15px;
-    margin: 15px 0;
-}
-
-/* Peu - Fandom banner */
-.banner {
-  /* El color de fondo del banner de Fandom en la imagen es morado */
-  background: #7a3fb2; 
-  color: #fff;
-  padding: 14px;
-  text-align: center;
-  margin-top: 0; /* Pegado al final del artículo */
-  border-top: 1px solid #7a3fb2;
-}
-
-.banner p {
-    color: #fff;
-    font-size: 12px;
-    margin-bottom: 5px;
-}
-
-.banner a {
-    color: #fff;
-    text-decoration: underline;
-}
-
-.footer-img {
-    height: 80px;
-    margin-bottom: 6px;
-}
-
-/* Información legal al final, fuera del contenedor principal */
-.legal-info {
-    text-align: center;
-    font-size: 10px;
-    color: #666;
-    margin: 10px 0;
-}
-
-/* Responsiu */
-@media (max-width: 920px) {
-  .container {
-    margin: 0; /* Elimina el margen lateral en pantallas pequeñas */
-  }
-}
-@media (max-width: 600px) {
-  /* Los ajustes para móvil del código original se mantienen */
-  .container {
-    padding: 0;
-  }
-  .article {
-    padding: 15px;
-  }
-  .logo {
-    height: 36px;
-  }
+.character-list a:hover {
+  text-decoration: underline;
 }
