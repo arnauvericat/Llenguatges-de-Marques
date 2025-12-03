@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<title>Hotel Terror - Reserva</title>
+</head>
+<body class="reserva-page">
+<header>
+       <a href="index.html">
+        <img src="img/estrelles.jpg" alt="Logo Hotel Terror" class="logo">
+            </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="precios.html">Precios</a></li>
+                <li><a href="reserva.html">Reserva</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main class="reserva-main">
+    <h1>Reserve su habitación en Hotel Terror</h1>
+
+    <form class="form-reserva">
+
+        <fieldset>
+            <legend>Dades personals</legend>
+            <label>Tractament:
+                <select>
+                    <option>Sr</option>
+                    <option>Sra</option>
+                    <option>Srta</option>
+                </select>
+            </label>
+            <label>Nom: <input type="text"></label>
+            <label>Cognoms: <input type="text"></label>
+            <label>Telèfon: <input type="tel"></label>
+            <label>Email: <input type="email"></label>
+            <label>Confirmar Email: <input type="email"></label>
+            <label>Contrasenya: <input type="password"></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dades de la reserva</legend>
+            <label>Tipus d'habitació:
+                <select>
+                    <option>Habitació individual</option>
+                    <option>Habitació doble</option>
+                    <option>Habitació doble superior</option>
+                    <option>Habitació triple</option>
+                </select>
+            </label>
+            <label>Persones: <input type="number" min="1" max="10"></label>
+            <label>Data entrada: <input type="date"></label>
+            <label>Data sortida: <input type="date"></label>
+            <label>Peticions especials:
+                <textarea placeholder="(No es poden garantir, però farem el possible)"></textarea>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dades addicionals</legend>
+            <label><input type="checkbox"> Parking cobert (+8€/nit) — Parking exterior gratuït disponible</label>
+            <label>Hora d'arribada prevista: <input type="time"></label>
+            <label><input type="checkbox"> Afegir esmorzar (+5€/dia)</label>
+        </fieldset>
+
+        <button type="submit">Enviar reserva</button>
+    </form>
+
+</main>
+
+    <footer>
+        <p>Actividad realizada por <strong>Arnau Vericat</strong></p>
+        <p>Fotografías de la portada <a href="https://unsplash.com">Unsplash</a> 
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">   
+                <img src="img/creative-commons.png" alt="Licencia CC BY-SA">
+            </a>
+        </p>
+    </footer>
+</body>
+</html>

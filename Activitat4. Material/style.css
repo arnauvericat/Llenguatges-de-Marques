@@ -1,0 +1,365 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+/* CONTENEDOR PRINCIPAL PARA CRECER */
+main {
+    flex: 1;
+}
+
+/* === ESTILOS DE LA PÁGINA PRINCIPAL (index.html) - SIN TOCAR === */
+header {
+    background-color: #1c8d00;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+    border: 2px solid white;
+    background-color: #2c3e50;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: text-shadow 0.2s, background-color 0.2s;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+/* Hover con fondo blanco (solo en páginas que lo necesiten, pero no rompe index) */
+nav a:hover {
+    background-color: white;
+    color: #1c8d00 !important;
+    text-shadow: none;
+}
+
+/* SECCIÓN HERO (solo en index.html) */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-image: url('imagenes/portada.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    text-align: left;
+    color: white;
+    z-index: 0;
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+.hero h1 {
+    color: #ff0000;
+    font-size: 48px;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    z-index: 2;
+    position: relative;
+}
+
+.hero p {
+    color: #ff0000;
+    font-size: 24px;
+    margin: 10px 0 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    z-index: 2;
+    position: relative;
+}
+
+/* Footer base (color oscuro para index.html) */
+footer {
+    background-color: #1c8d00;
+    padding: 20px;
+    text-align: left;
+    font-size: 14px;
+    color: #2c3e50;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color: #2c3e50;
+    text-decoration: underline;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+}
+
+footer img {
+    vertical-align: middle;
+    margin-left: 5px;
+    height: 20px;
+    position: absolute;
+    bottom: 0;
+}
+
+/* === ESTILOS ESPECÍFICOS PARA precios.html === */
+
+/* Fondo blanco solo en precios.html */
+body.precios-page {
+    background-image: none;     /* sin fondo */
+    background-color: #ffffff;  /* fondo blanco */
+    color: #333;                /* texto gris */
+    display: block;             /* anula el flex del body global */
+    min-height: 100vh;          /* asegura altura completa */
+    padding-top: 0;             /* evita espacios raros */
+}
+
+
+body.precios-page footer {
+    position: static;
+    background-color: #1c8d00;
+    color: white;
+    margin-top: 30px;
+    position: absolute;
+    bottom: 0;
+
+}
+
+body.precios-page footer a {
+    color: white;
+}
+
+body.precios-page main {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Título con colores diferentes */
+body.precios-page .prices-section h2 {
+    font-size: 28px;
+    margin: 0 0 20px 0;
+}
+
+body.precios-page .prices-section h2 .highlight {
+    color: #0000ff;
+    font-weight: bold;
+}
+
+body.precios-page .prices-section h2 .normal {
+    color: #666666;
+    font-weight: normal;
+}
+
+/* Tabla de precios */
+body.precios-page .prices-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+body.precios-page .prices-table th,
+body.precios-page .prices-table td {
+    padding: 12px;
+    text-align: center;
+    vertical-align: top;
+    border: 1px solid #ccc;
+    min-height: 50px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+body.precios-page .prices-table th {
+    background-color: #5d7b92;
+    color: white;
+    font-weight: bold;
+}
+
+body.precios-page .prices-table tbody tr:nth-child(odd) td {
+    background-color: #ffffff;
+}
+
+body.precios-page .prices-table tbody tr:nth-child(even) td {
+    background-color: #f9f9f9;
+}
+
+body.precios-page .common-features {
+    background-color: #5d7b92 !important;
+    color: white !important;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+body.precios-page .person-icon {
+    width: 24px;
+    height: auto;
+    margin: 0 3px;
+    vertical-align: middle;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body.precios-page main {
+        padding: 15px;
+        margin: 0 10px;
+    }
+    body.precios-page .prices-table td {
+        min-height: 60px;
+        font-size: 14px;
+    }
+    body.precios-page .person-icon {
+        width: 20px;
+    }
+}
+
+/* === ESTILOS ESPECÍFICOS PARA reserva.html === */
+
+body.reserva-page {
+    background-image: none;
+    background-color: #eeeeee; /* Fondo gris claro como el ejemplo */
+    color: black;
+    display: block; /* Evita flex del body global */
+    padding-bottom: 120px; /* Evita que el footer tape el formulario */
+}
+
+/* Contenedor principal */
+body.reserva-page .reserva-main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Título */
+body.reserva-page h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: black;
+}
+
+/* Formulario */
+body.reserva-page .form-reserva {
+    background: #d6d6d6;
+    padding: 25px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* Fieldsets */
+body.reserva-page fieldset {
+    border: 2px solid #b5b5b5;
+    padding: 20px;
+    border-radius: 5px;
+    background: #e6e6e6;
+}
+
+body.reserva-page legend {
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+/* Etiquetas y inputs */
+body.reserva-page label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+body.reserva-page input,
+body.reserva-page select,
+body.reserva-page textarea {
+    margin-top: 6px;
+    padding: 8px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+/* Textarea */
+body.reserva-page textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+/* Botón enviar */
+body.reserva-page button[type=\"submit\"] {
+    margin-top: 10px;
+    background-color: #1c8d00;
+    color: white;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+body.reserva-page button[type=\"submit\"]:hover {
+    background-color: #147000;
+}
+
+/* Footer ajustado para reserva */
+body.reserva-page footer {
+    position: static; /* Para que no tape el formulario */
+    background-color: #1c8d00;
+    color: #2c3e50;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+body.reserva-page footer a {
+    color: #2c3e50;
+}
+
+body.reserva-page footer img {
+    position: static;
+    margin-left: 5px;
+}
