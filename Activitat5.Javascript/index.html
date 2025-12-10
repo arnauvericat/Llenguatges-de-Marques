@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="GameZone Epic: entra en els mons més immersius del gaming. Història, personatges i aventures èpiques.">
+    <meta name="author" content="Arnau Vericat">
+    <meta name="keywords" content="gaming, videojocs, història, mons virtuals, esports">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone Epic – Móns Sense Fi</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(12, 12, 22, 0.85), rgba(12, 12, 22, 0.9)), 
+                        url('img/elden-ring.jpg') center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 10% 20%, rgba(79, 172, 254, 0.1), transparent 30%),
+                        radial-gradient(circle at 90% 80%, rgba(247, 37, 133, 0.1), transparent 30%);
+            pointer-events: none;
+        }
+
+        .hero h1 {
+            font-size: 5rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(to right, #4facfe, #00f2fe, #a18cd1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 4px 20px rgba(0, 242, 254, 0.3);
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+            max-width: 800px;
+            margin: 0 auto 2.5rem;
+            opacity: 0.95;
+        }
+
+        .btn-explorar {
+            background: linear-gradient(90deg, #4facfe, #00f2fe);
+            color: #0c0c16;
+            padding: 14px 40px;
+            border: none;
+            border-radius: 50px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            box-shadow: 0 6px 25px rgba(0, 242, 254, 0.5);
+        }
+
+        .btn-explorar:hover {
+            transform: scale(1.08) rotate(1deg);
+            box-shadow: 0 10px 35px rgba(0, 242, 254, 0.8);
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 4rem 2rem;
+            background: #0a0a12;
+        }
+
+        .feature {
+            text-align: center;
+            max-width: 250px;
+        }
+
+        .feature h3 {
+            color: #4facfe;
+            margin: 15px 0;
+        }
+    </style>
+    <script>
+        // ✅ Requisito: JS en el <head>
+        function iniciarRellotge() {
+            let segons = 0;
+            const rellotge = document.getElementById("rellotge");
+            setInterval(() => {
+                segons++;
+                rellotge.textContent = "⏱ Temps a la pàgina: " + segons + " s";
+            }, 1000);
+        }
+    </script>
+</head>
+<body onload="iniciarRellotge()">
+    <header>
+        <div class="logo">
+            <img src="img/logo.svg" alt="GameZone Epic">
+            <h1>GameZone Epic</h1>
+        </div>
+        <nav>
+            <a href="index.html">Inici</a>
+            <a href="jocs.html">Jocs</a>
+        </nav>
+        <div id="rellotge" style="color: #ffcc00; font-weight: bold; margin-top: 8px;"></div>
+    </header>
+
+    <section class="hero">
+        <h1>MONS SENSE FI</h1>
+        <p>On cada joc és una realitat paral·lela, cada personatge té una ànima i cada decisió canvia el destí.</p>
+        <a href="jocs.html" class="btn-explorar">EXPLORA ELS JUEGOS</a>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <div style="font-size: 3rem;">🌍</div>
+            <h3>Móns Immersius</h3>
+            <p>Explora paisatges vius que respiren, ploren i recorden.</p>
+        </div>
+        <div class="feature">
+            <div style="font-size: 3rem;">🎭</div>
+            <h3>Personatges Profunds</h3>
+            <p>Relacions que trascendeixen la pantalla.</p>
+        </div>
+        <div class="feature">
+            <div style= "font-size: 3rem;">⚔️</div>
+            <h3>Batalles Èpiques</h3>
+            <p>Cada combat és una dansa de mort i glòria.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 GameZone Epic – Creat per a jugadors, per jugadors.</p>
+    </footer>
+</body>
+</html>

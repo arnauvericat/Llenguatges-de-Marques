@@ -1,0 +1,53 @@
+<svg width="320" height="80" viewBox="0 0 320 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo oscuro (opcional, normalmente el body ya es oscuro) -->
+  <rect width="320" height="80" fill="transparent" />
+
+  <!-- Joystick estilizado (izquierda) -->
+  <g transform="translate(20, 40)">
+    <!-- Base del joystick -->
+    <circle cx="0" cy="0" r="18" fill="none" stroke="url(#gradNeon)" stroke-width="2"/>
+    <!-- Direccional -->
+    <line x1="0" y1="-12" x2="0" y2="-6" stroke="url(#gradNeon)" stroke-width="3"/>
+    <line x1="0" y1="6" x2="0" y2="12" stroke="url(#gradNeon)" stroke-width="3"/>
+    <line x1="-12" y1="0" x2="-6" y2="0" stroke="url(#gradNeon)" stroke-width="3"/>
+    <line x1="6" y1="0" x2="12" y2="0" stroke="url(#gradNeon)" stroke-width="3"/>
+    <!-- Botón superior -->
+    <circle cx="0" cy="-24" r="4" fill="url(#gradButton)"/>
+  </g>
+
+  <!-- Texto "GameZone" -->
+  <text x="70" y="52" font-family="'Orbitron', 'Exo 2', sans-serif" font-weight="700" font-size="42" fill="white">
+    <tspan dx="0">Game</tspan>
+    <tspan fill="url(#gradNeon)">Zone</tspan>
+  </text>
+
+  <!-- Subtítulo "EPIC" -->
+  <text x="85" y="72" font-family="'Roboto', sans-serif" font-size="12" fill="#4facfe" opacity="0.9">
+    EPIC
+  </text>
+
+  <!-- Gradientes -->
+  <defs>
+    <!-- Gradiente neón para "Zone" y joystick -->
+    <linearGradient id="gradNeon" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4facfe"/>
+      <stop offset="50%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#a18cd1"/>
+    </linearGradient>
+
+    <!-- Gradiente para botón -->
+    <linearGradient id="gradButton" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff2a6d"/>
+      <stop offset="100%" stop-color="#f72585"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Glow suave (opcional, para efecto neón) -->
+  <filter id="neonGlow" x="-50%" y="-50%" width="200%" height="200%">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+</svg>
