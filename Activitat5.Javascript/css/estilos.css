@@ -257,3 +257,99 @@ footer {
     from { filter: drop-shadow(0 0 5px rgba(79, 172, 254, 0.6)); }
     to { filter: drop-shadow(0 0 15px rgba(0, 242, 254, 0.9)); }
 }
+
+
+/* Pagina comunidad.html */
+
+ .comunitat-hero {
+            height: 50vh;
+            background: linear-gradient(135deg, #1a1a2e, #0f0f16);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .seccio-interactiva {
+            background: rgba(26, 26, 46, 0.6);
+            border-radius: 16px;
+            padding: 25px;
+            margin: 2rem auto;
+            max-width: 900px;
+            cursor: default;
+            transition: all 0.4s ease;
+            border: 2px solid transparent;
+        }
+
+        .seccio-interactiva.resaltat {
+            background: rgba(247, 37, 133, 0.15);
+            border-color: #f72585;
+            color: white;
+        }
+
+        .seccio-interactiva.resaltat h3 {
+            color: #ff2a6d;
+        }
+
+        .form-registre {
+            background: rgba(18, 18, 30, 0.85);
+            backdrop-filter: blur(10px);
+            padding: 2.5rem;
+            border-radius: 20px;
+            max-width: 600px;
+            margin: 3rem auto;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .form-registre input {
+            width: 100%;
+            padding: 14px;
+            margin: 12px 0;
+            border: 1px solid #4facfe;
+            border-radius: 8px;
+            background: #0f0f1a;
+            color: white;
+            font-size: 1.1rem;
+        }
+
+        .form-registre button {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(90deg, #4facfe, #00f2fe);
+            color: #0c0c16;
+            border: none;
+            border-radius: 8px;
+            font-family: 'Orbitron', sans-serif;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .form-registre button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 242, 254, 0.5);
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            margin: 3rem 0;
+        }
+
+        .feature-card {
+            background: rgba(26, 26, 46, 0.7);
+            padding: 20px;
+            border-radius: 12px;
+            width: 220px;
+            text-align: center;
+            border: 1px solid #4facfe40;
+        }
+
+        .feature-card h4 {
+            color: #4facfe;
+            margin-bottom: 10px;
+        }
