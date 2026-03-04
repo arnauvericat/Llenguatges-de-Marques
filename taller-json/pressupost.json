@@ -1,0 +1,43 @@
+{
+  "pressupostos": [
+    {
+      "marca": "Samsung",
+      "model": "Galaxy S24",
+      "preu": 899,
+      "moneda": "EUR",
+      "pantalla": "6.2 polzades AMOLED",
+      "processador": "Exynos 2400",
+      "ram_gb": 8,
+      "emmagatzematge_gb": 256,
+      "camera_principal_mp": 50,
+      "bateria_mah": 4000,
+      "sistema_operatiu": "Android"
+    },
+    {
+      "marca": "Apple",
+      "model": "iPhone 15",
+      "preu": 959,
+      "moneda": "EUR",
+      "pantalla": "6.1 polzades Super Retina XDR",
+      "processador": "A16 Bionic",
+      "ram_gb": 6,
+      "emmagatzematge_gb": 128,
+      "camera_principal_mp": 48,
+      "bateria_mah": 3349,
+      "sistema_operatiu": "iOS"
+    },
+    {
+      "marca": "Xiaomi",
+      "model": "13T Pro",
+      "preu": 649,
+      "moneda": "EUR",
+      "pantalla": "6.67 polzades AMOLED 144Hz",
+      "processador": "MediaTek Dimensity 9200+",
+      "ram_gb": 12,
+      "emmagatzematge_gb": 512,
+      "camera_principal_mp": 50,
+      "bateria_mah": 5000,
+      "sistema_operatiu": "Android"
+    }
+  ]
+}

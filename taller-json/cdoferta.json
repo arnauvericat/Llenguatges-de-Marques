@@ -1,0 +1,22 @@
+{
+  "cd_oferta": {
+    "titol": "Thriller",
+    "artista": "Michael Jackson",
+    "any_publicacio": 1982,
+    "genere": "Pop",
+    "preu": {
+      "actual": 9.95,
+      "moneda": "EUR",
+      "descompte_percentatge": 50,
+      "preu_original": 19.90
+    },
+    "stock": 25,
+    "discografica": "Epic Records",
+    "cancoes": [
+      "Wanna Be Startin' Somethin'",
+      "Thriller",
+      "Beat It",
+      "Billie Jean"
+    ]
+  }
+}
