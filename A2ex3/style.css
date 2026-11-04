@@ -12,7 +12,7 @@ html, body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    background: #fff;
+    background: #a09a9a;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -70,21 +70,13 @@ a:hover {
 
 .article {
     padding: 30px 40px;
-    background: #fff;
+    background: #e8e6e6;
 }
 
 .article h1 {
     margin: 6px 0 20px;
     color: #0b4b6f;
     font-size: 30px;
-}
-
-.section {
-    margin-top: 24px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #ddd;
-    color: #0b4b6f;
-    font-size: 22px;
 }
 
 p {
@@ -130,12 +122,7 @@ blockquote {
     margin-left: 0;
 }
 
-.image-context {
-    margin: 10px 0;
-    text-align: center;
-    font-weight: bold;
-    font-size: 14px;
-}
+
 
 .main-image {
     display: block;
@@ -317,36 +304,3 @@ blockquote {
     background: #444;
 }
 
-
-/* =========================
-   ADAPTACIÓ A DIFERENTS PANTALLES
-   ========================= */
-
-@media (max-width: 920px) {
-    .container {
-        margin: 0;
-    }
-}
-
-@media (max-width: 600px) {
-    .container {
-        padding: 0;
-    }
-
-    .article {
-        padding: 15px;
-    }
-
-    .logo {
-        height: 36px;
-    }
-
-    .arcs-layout {
-        flex-direction: column;
-    }
-
-    .arcs-images img {
-        width: 100%;
-        max-width: 100%;
-    }
-}
